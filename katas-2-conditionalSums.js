@@ -20,7 +20,6 @@ const conditionalSum = function(values, condition) {
     }
     return oddSum;
   }
-  
 };
 
 console.log(conditionalSum([1, 2, 3, 4, 5], "even"));
