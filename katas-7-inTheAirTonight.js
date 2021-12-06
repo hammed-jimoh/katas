@@ -6,11 +6,10 @@ const checkAir = function (samples, threshold) {
       dirtySamples += 1;
     }
   }
-  dirtySamples = dirtySamples / 10;
-  
+   
   //comparing the dirty samples to the threshold
 
-  if (dirtySamples > threshold){
+  if ((dirtySamples / samples.length) > threshold){
     return "Polluted";
   }
   else {
